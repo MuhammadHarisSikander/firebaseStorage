@@ -1,5 +1,4 @@
 import { onValue, ref } from "firebase/database";
-// import { ref } from "firebase/storage";
 import React, { useEffect, useState } from "react";
 import { database } from "./firebasee";
 
@@ -20,18 +19,6 @@ const Collection = () => {
         })
     }
         , [])
-
-
-
-    // const reloadImages = () => {
-    //     const xxx = ref(database, 'images');
-    //     onValue(xxx, (snapshot) => {
-    //         const data = snapshot.val()
-    //         setArr(data)
-    //     })
-    // }
-
-
 
     return (
         <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', margin: 20 }} >
